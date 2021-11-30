@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Predict Player Overall Rating Score </title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Overall Rating Score :</h1>
+
+     <!-- Form to enter new data for predictions  -->
+        
+        <input type="text" name="international_reputation" placeholder="International Reputation" required="required" /><br>
+    	<input type="text" name="weak_foot" placeholder="Weak Foot" required="required" /><br>
+        <input type="text" name="skill_moves" placeholder="Skill Moves" required="required" /><br>
+        <input type="text" name="pace" placeholder="Pace" required="required" /><br>
+        <input type="text" name="shooting" placeholder="Shooting" required="required" /><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{pred}}
+
+</body>
+</html>
